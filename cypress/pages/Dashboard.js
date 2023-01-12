@@ -1,4 +1,4 @@
-class TabBar {
+class Dashboard {
     elements = {
       desktopTab: () => cy.get("#TabBar-DesktopTab")
     };
@@ -8,4 +8,4 @@ class TabBar {
     }
 }
 
-export const tabBar = new TabBar();
+export const tabBar = new Dashboard();

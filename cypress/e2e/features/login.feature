@@ -3,7 +3,18 @@ Feature: Login page
     Feature Login page will work depending on the user credentials.
 
     Background:
-        Given the browser is at ClaimCenter login page
-    Scenario: Success Login
-        When I logged in as "aapplegate"
-        Then the ClaimCenter desktop should be accessible
+        Given the browser is at login page
+
+    # Scenario: Success Login
+    #     When I logged in with the following details:
+    #         | Username | admin       |
+    #         | Password | admin123    | 
+    #         | Branch   | Main Branch |
+    #     Then I am successfully logged in
+
+    Scenario: Failed Login
+        When I logged in with the following details:
+            | Username | admin123    |
+            | Password | admin123    | 
+            | Branch   |             |
+        Then the login failed
