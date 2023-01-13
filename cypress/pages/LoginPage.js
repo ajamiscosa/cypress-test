@@ -35,9 +35,10 @@ export class LoginPage {
         this.clickLogin();
     }
 
-    verifyLoginFailed() {
+    verifyLoginFailed(errorMessage) {
+        let errMsg = errorMessage ?? 'Invalid username/password';
         this.elements.errorMsgField().should('be.visible');
-        this.elements.errorMsgField().should('contain.text', 'Invalid username/password');
+        this.elements.errorMsgField().should('contain.text', errMsg);
     }
 }
 
