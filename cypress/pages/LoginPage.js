@@ -1,10 +1,10 @@
-export class LoginPage {
+class LoginPage {
     elements = {
         usernameInput: () => cy.get("#username"),
         passwordInput: () => cy.get("#password"),
         branchInput: () => cy.get("[name=branch_id]"),
         loginBtn: () => cy.get("button[type=submit]").contains("Login"),
-        errorMsgField: () => cy.get('.error')
+        errorMsgField: () => cy.get(".error")
     };
 
     typeUsername(username) {

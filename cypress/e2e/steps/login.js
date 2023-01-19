@@ -2,7 +2,12 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { loginPage } from '@pages/LoginPage'
 
 Given("the browser is at login page", () => {
-  cy.visit("/login");
+    cy.visit("/login");
+});
+
+Given("the user is logged in", () => {
+    cy.visit("/login");
+    loginPage.submitLogin("admin", "admin123", "Main Branch");
 });
 
 When("I logged in with the following details:", (dataTable) => {
