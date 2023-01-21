@@ -24,5 +24,8 @@
     "cypress": "^12.3.0",
     "esbuild": "^0.16.4",
     "multiple-cucumber-html-reporter": "^3.0.1"
+  },
+  "dependencies": {
+    "cypress-get-table": "^1.0.1"
   }
 }
