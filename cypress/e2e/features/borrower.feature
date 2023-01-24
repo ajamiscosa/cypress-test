@@ -1,6 +1,6 @@
-Feature: System Functionalities
+Feature: Borrower Functionalities
 
-    Features of the System
+    Test Scenarios for Borrower Functionalities
 
 
     Background:

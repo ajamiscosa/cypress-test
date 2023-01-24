@@ -87,7 +87,6 @@ class NewBorrowerPage {
     }
 
     deleteBorrowerFromList(details) {
-
         this.elements.borrowersTable()
             .contains('td', details['Email'])
             .parent('tr')
