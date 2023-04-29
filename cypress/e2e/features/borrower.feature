@@ -9,6 +9,7 @@ Feature: Borrower Functionalities
     Scenario: Borrower - New Record
         When I create a new borrower with the following details:
             | First Name     | Leon                       |
+            | Middle Name    | De Leon                    |
             | Last Name      | Guerrero                   |
             | Email Address  | leon.guerrero@testmail.com |
             | Phone Number   | 0012312345                 |

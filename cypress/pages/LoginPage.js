@@ -22,9 +22,16 @@ class LoginPage {
     }
     
     selectBranch(branch) {
-        if(branch === null || branch === undefined || branch === '') {
-            return;
-        }
+        // cy.log(branch);
+        // cy.log(branch === null);
+        // cy.log(branch === undefined);
+        // cy.log(branch === '');
+        // cy.log(branch === null || branch === undefined || branch === '');
+        // cy.log(cy.nullcheck(branch));
+        // if(cy.nullcheck(branch)) {
+        //     return;
+        // }
+        if(branch === null || branch === undefined || branch === '') return;
         this.elements.branchInput().select(branch);
     }
 
